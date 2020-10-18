@@ -1,0 +1,9 @@
+LED_COUNT = 60
+MAX_INTENSITY = 10
+
+# FixedLightStrip
+SCALE_FACTOR = 100
+
+# ZenShiftLightStrip
+ZEN_STEADY_PERIOD = 2
+ZEN_SHIFT_PERIOD = 2

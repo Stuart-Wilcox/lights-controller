@@ -1,0 +1,10 @@
+pcm.softvol {
+	type softvol
+	slave {
+		pcm "hw:1,0"
+	}
+	control "SoftMaster"
+	card 1
+	min_dB -10.0
+	max_dB 50.0
+}
