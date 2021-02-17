@@ -1,8 +1,8 @@
 import time
 import random
-from LightStrip import LightStrip
-from constants import MAX_INTENSITY, ZEN_STEADY_PERIOD, ZEN_SHIFT_PERIOD
-from utils import clamp_int
+from src.LightStrips.LightStrip import LightStrip
+from src.constants import MAX_INTENSITY, ZEN_STEADY_PERIOD, ZEN_SHIFT_PERIOD
+from src.utils import clamp_int, get_random_rgb
 
 
 class ZenShiftLightStrip(LightStrip):
@@ -83,10 +83,4 @@ class ZenShiftLightStrip(LightStrip):
         return next_state
 
     def get_next_target(self):
-        val = int(random.uniform(1, 7))
-        red = val & 1
-        green = val>>1 & 1
-        blue = val>>2 & 1
-
-        next_target = (MAX_INTENSITY * red, MAX_INTENSITY * green, MAX_INTENSITY * blue)
-        return next_target
+        return get_random_rgb()

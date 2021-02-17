@@ -1,1 +1,1 @@
-sudo ./env/bin/python src/main.py
+sudo ./env/bin/python main.py

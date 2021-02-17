@@ -1,6 +1,6 @@
 import random
-from constants import MAX_INTENSITY, SCALE_FACTOR
-from LightStrip import LightStrip
+from src.constants import MAX_INTENSITY, SCALE_FACTOR
+from src.LightStrips.LightStrip import LightStrip
 
 
 class FixedLightStrip(LightStrip):

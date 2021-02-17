@@ -1,5 +1,5 @@
-from constants import MAX_INTENSITY
-from LightStrip import LightStrip
+from src.constants import MAX_INTENSITY
+from src.LightStrips.LightStrip import LightStrip
 
 class XmasLightStrip(LightStrip):
     def __init__(self, led_count=None):

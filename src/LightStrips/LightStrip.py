@@ -2,7 +2,7 @@ import atexit
 import board
 import neopixel
 
-from constants import LED_COUNT
+from src.constants import LED_COUNT
 
 
 class LightStrip:
